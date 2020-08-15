@@ -32,3 +32,5 @@ Vagrant.configure("2") do |config|
   
 end
 ```
+# to package
+vagrant-libvirt uses sysprep, which needs some special settings, use `package.sh` to package the vagrant box.

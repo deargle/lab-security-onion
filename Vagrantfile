@@ -49,5 +49,9 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", path: "scripts/set-silk-envvar.sh"
   config.vm.provision "shell", path: "scripts/download-casefiles.sh"
   config.vm.provision "shell", path: "scripts/fix-pork-rules.sh"
-  
+
+  # run with `vagrant provision --provision-with sysprep`
+  config.vm.provision "sysprep", type: "shell", run: "never" do |s|
+    s.path = "scripts/sysprep.sh"
+  end
 end
