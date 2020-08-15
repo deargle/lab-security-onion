@@ -16,7 +16,6 @@ Vagrant.configure("2") do |config|
     libvirt.nic_model_type = "virtio"
     libvirt.sound_type     = "ich6"
     libvirt.video_type     = "virtio"
-    libvirt.video_vram      = nil
     libvirt.cpus           = 2
 
     libvirt.channel :type  => 'spicevmc', :target_name => 'com.redhat.spice.0',     :target_type => 'virtio'
