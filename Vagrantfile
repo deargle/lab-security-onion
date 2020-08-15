@@ -28,6 +28,8 @@ Vagrant.configure("2") do |config|
   config.vm.network :private_network,
     ip: "192.168.56.254", #ip doesn't matter, security-onion configures eth1 to be a sniffing interface
     auto_config: false
+  
+  config.ssh.insert_key = false
 
   # Disable NFS sharing (==> default: Mounting NFS shared folders...)
   config.vm.synced_folder ".", "/vagrant", type: "nfs", disabled: true
