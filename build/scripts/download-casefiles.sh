@@ -12,4 +12,4 @@ fi
 
 #cases
 wget https://daveeargle.com/class/cu/mgmt4250/case.pcap
-wget -O evidence.pcap http://forensicscontest.com/contest06/evidence06.pcap
+wget https://daveeargle.com/class/cu/mgmt4250/evidence.pcap
