@@ -11,5 +11,5 @@ if [ ! -d /data/SiLK-LBNL-05 ]; then
 fi
 
 #cases
-wget https://daveeargle.com/class/cu/mgmt4250/case.pcap
-wget https://daveeargle.com/class/cu/mgmt4250/evidence.pcap
+wget https://github.com/deargle/lab-security-onion/blob/master/case.pcap
+wget https://github.com/deargle/lab-security-onion/blob/master/evidence.pcap
