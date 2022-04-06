@@ -8,4 +8,7 @@ Vagrant.configure("2") do |config|
     libvirt.management_network_autostart = true
   end
 
+  config.vm.provision "shell", path: "build/scripts/download-casefiles.sh"
+
+
 end
