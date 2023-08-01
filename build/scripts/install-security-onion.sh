@@ -19,7 +19,7 @@ sudo add-apt-repository -y ppa:securityonion/stable
 sudo apt-get update
 #Install the securityonion-all metapackage:
 
-sudo apt-get -y install securityonion-all syslog-ng-core foremost
+sudo apt-get -y install securityonion-all syslog-ng-core foremost mirage
 #If you want to use Salt, then also install securityonion-onionsalt. You can do this before or after Setup, but it’s much easier if you do it before Setup.
 
 #sudo apt -y install securityonion-onionsalt
